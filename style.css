@@ -1,0 +1,13 @@
+body {
+  background-color: #1d2a35;
+  color: #ddd;
+  font-family: "Segoe UI", sans-serif;
+  margin-left: 25%;
+  padding: 16px;
+  border: #999 solid 1px;
+}
+
+p.des {
+  color: #999;
+  font-style: italic;
+}
