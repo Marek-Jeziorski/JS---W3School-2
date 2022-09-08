@@ -11,11 +11,6 @@
 // ----------------------------  Nested Functions
 // ----------------------------
 
-/* 
-All functions have access to the global scope.  
-all functions have access to the scope "above" them.
-*/
-
 {
   // w obiekcie {demo_2}(komp) wywołaj funkcję --> add();
   document.getElementById("demo_2").innerHTML = add();
@@ -30,7 +25,7 @@ all functions have access to the scope "above" them.
       counter += 1;
     }
 
-    // wywołaj funkcję --> plus()
+    // wywołaj funkcję --> plus() x 3
     plus();
     plus();
     plus();

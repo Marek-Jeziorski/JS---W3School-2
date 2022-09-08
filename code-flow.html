@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Code Flow</title>
+  </head>
+  <body>
+    <pre>
+      <mark>WINDOW</mark> {
+                                          
+        (document object)
+        
+        p1: DOCUMENT{
+        
+                                      (element-objects)
+                (root node)
+
+                      p1: HTML{ 
+                                  p1 : HEAD{}
+                                  p2 : BODY{}
+                              }
+        
+        } END DOCUMENT ?
+
+        
+        p2: counter{}   let counter = 'primitive'
+        
+        p3: person{}    const person = {
+                                          type: 'complex';
+                                          metod: function () {}
+                                        } 
+
+
+        m1: function funName(param) {
+            
+          this.number = param;
+         
+          return param;
+        }
+
+      } 
+    
+      <mark>END WINDOW</mark>
+    </pre>
+
+    <!-- --------------------------------------------- -->
+    <!-- --------------------------------------------- -->
+    <!-- --------------------------------------------- -->
+    <!-- --------------------------------------------- -->
+    <!-- --------------------------------------------- -->
+
+    <script src="/code-flow.js"></script>
+  </body>
+</html>
