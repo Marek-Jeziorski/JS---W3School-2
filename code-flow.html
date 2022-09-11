@@ -51,37 +51,61 @@
     </pre>
     <hr />
 
-    <!-- ----------------------------------------------------- -->
+    <!-- DEMO_1a,1b -------------------------------------------- -->
+    <!-- code flow -->
+    <!-- hoisting declaration -->
     <div>
       <p>
-        <mark>demo_1</mark>
+        <mark>demo_1a</mark>
       </p>
       <p class="description">Code Flow</p>
-      <p id="demo_1"></p>
-      <hr />
-    </div>
+      <p id="demo_1a"></p>
 
-    <!-- ----------------------------------------------------- -->
-    <div>
       <p>
-        <mark>demo_2</mark>
+        <mark>demo_1b</mark>
       </p>
       <p class="description">Hoisting Declaration</p>
-      <p id="demo_2"></p>
+      <p id="demo_1b"></p>
       <hr />
     </div>
 
-    <!-- ----------------------------------------------------- -->
+    <!-- DEMO_2 ---------------------------------------------- -->
+    <!-- nested function -->
     <div>
       <p>
-        <mark>demo_3</mark>
+        <mark>demo_2a</mark>
       </p>
-      <p class="description">Counter Dilemma</p>
-      <p><button type="button" onclick="myFunction()">Count!</button></p>
-      <p id="demo_3"></p>
-      <hr />
+      <p class="description">Nested Functions</p>
+      <p id="demo_2a"></p>
     </div>
 
+    <!-- DEMO_2B ---------------------------------------------- -->
+    <!-- CLOSURES -->
+    <div>
+      <p>
+        <mark>demo_2b</mark>
+      </p>
+      <p class="description">CLOSURES - SELF INVOKING FUNCTIONS</p>
+      <p><button type="button" onclick="myFunction()">Count!</button></p>
+      <p id="demo_2b"></p>
+
+      <p>
+        This is called a JavaScript closure. It makes it possible for a function
+        to have "private" variables.
+      </p>
+
+      <p>
+        The counter is protected by the scope of the anonymous function, and can
+        only be changed using the add function.
+      </p>
+      <p>
+        <span class="att">
+          CLOSURE --> is a function having access to the parent scope, even
+          after the parent function has closed.
+        </span>
+      </p>
+      <hr />
+    </div>
     <script src="/code-flow.js"></script>
   </body>
 </html>
