@@ -23,7 +23,7 @@
                                   p2 : BODY{}
                               }
         
-        } END DOCUMENT ?
+        } END DOCUMENT 
 
         
         p2: counter{}   let counter = 'primitive'
@@ -41,18 +41,46 @@
           return param;
         }
 
+        
+                          --> <small>send argument to calling function --> parameter</small> 
+        funName(argument) <-- <small>returned result parameter from called function</small>
+
       } 
     
       <mark>END WINDOW</mark>
     </pre>
-    <p id="demo_1"></p>
-    <p id="demo_2"></p>
+    <hr />
 
-    <!-- --------------------------------------------- -->
-    <!-- --------------------------------------------- -->
-    <!-- --------------------------------------------- -->
-    <!-- --------------------------------------------- -->
-    <!-- --------------------------------------------- -->
+    <!-- ----------------------------------------------------- -->
+    <div>
+      <p>
+        <mark>demo_1</mark>
+      </p>
+      <p class="description">Code Flow</p>
+      <p id="demo_1"></p>
+      <hr />
+    </div>
+
+    <!-- ----------------------------------------------------- -->
+    <div>
+      <p>
+        <mark>demo_2</mark>
+      </p>
+      <p class="description">Hoisting Declaration</p>
+      <p id="demo_2"></p>
+      <hr />
+    </div>
+
+    <!-- ----------------------------------------------------- -->
+    <div>
+      <p>
+        <mark>demo_3</mark>
+      </p>
+      <p class="description">Counter Dilemma</p>
+      <p><button type="button" onclick="myFunction()">Count!</button></p>
+      <p id="demo_3"></p>
+      <hr />
+    </div>
 
     <script src="/code-flow.js"></script>
   </body>
