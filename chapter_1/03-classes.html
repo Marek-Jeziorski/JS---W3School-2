@@ -7,15 +7,77 @@
     <link rel="stylesheet" href="/style.css" />
     <script src="/jquery.js"></script>
     <script src="/app.js"></script>
-    <title>Document</title>
+    <title>03-classes</title>
   </head>
   <body>
     <div class="container flexer">
       <div id="menu"></div>
       <div id="content">
-        <h2></h2>
+        <h2>Classes</h2>
+        <pre>
+            class Car {
+
+                constructor(name, year) {
+
+                  this.name = name;
+                  this.year = year;
+                }
+
+                age() {
+                    let date = new Date();
+                    return date.getFullYear() - this.year;
+                }
+
+                method_2() { ... }
+              
+            }   
+
+            let myCar = new Car('Ford', 2014);
+
+            myCar.age();
+        </pre>
+        <!-- DEMO_1 ---------------------------------------------- -->
+        <!-- How to use Classes -->
+        <div>
+          <p>
+            <mark>demo_1</mark>
+          </p>
+          <p class="description">How to use Classes</p>
+          <p id="demo_1"></p>
+          <hr />
+        </div>
+
+        <!-- DEMO_2 ---------------------------------------------- -->
+        <!-- How to define and use a Class method -->
+        <div>
+          <p>
+            <mark>demo_2</mark>
+          </p>
+          <p class="description">How to define and use a Class method</p>
+          <p id="demo_2a"></p>
+          <p id="demo_2b"></p>
+
+          <hr />
+        </div>
+
+        <!-- DEMO_3 ---------------------------------------------- -->
+        <!-- Pass a parameter into the "age()" method -->
+        <div>
+          <p>
+            <mark>demo_3</mark>
+          </p>
+          <p class="description">Pass a parameter into the "age()" method</p>
+          <p id="demo_3"></p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
       </div>
     </div>
-    <script src="/index.js"></script>
+    <script src="/chapter_1/03-classes.js"></script>
   </body>
 </html>
