@@ -2,13 +2,41 @@ body {
   background-color: #1d2a35;
   color: #ddd;
   font-family: "Segoe UI", sans-serif;
-  padding: 0 25% 0 25%;
-  border: #999 solid 1px;
+}
+
+a {
+  display: inline-block;
+  color: #ddd;
+  text-decoration: none;
+  border: 1px;
+  padding-top: 1rem;
 }
 
 mark {
   background-color: rgb(52, 228, 52);
   text-transform: uppercase;
+}
+
+.container {
+  margin: 0 auto;
+  min-height: 95vh;
+}
+
+.flexer {
+  display: flex;
+}
+
+#menu {
+  flex: 8;
+  border: #999 solid 1px;
+}
+
+#content {
+  flex: 12;
+  padding: 0 16px;
+  border: #999 solid 1px;
+
+  padding-right: 140px;
 }
 
 span.att {
