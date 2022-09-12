@@ -70,6 +70,7 @@
   let year = date.getFullYear();
 
   let myCar = new Car("Ford", 2014);
+
   document.getElementById("demo_3").innerHTML =
     "My car is " + myCar.age(year) + " years old.";
 }
