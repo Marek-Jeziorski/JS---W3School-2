@@ -1,8 +1,10 @@
+"use strict";
 // DEMO_1 ----------------------------------------------
 // How to use Classes
 {
   console.log("------------- DEMO_1 -------------");
   console.log("How to use Classes");
+  // -----------------------------------------------------
 
   class Car {
     constructor(name, year) {

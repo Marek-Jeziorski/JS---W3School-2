@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+    <title>Class Inheritance</title>
+  </head>
+  <body>
+    <div class="container flexer">
+      <div id="menu"></div>
+      <div id="content">
+        <h2>Class Inheritance</h2>
+        <pre>
+        class Car {
+            
+            constructor(brand) {
+              this.carname = brand;
+            }
+            
+            present() {
+              return 'I have a ' + this.carname;
+            }
+          }
+
+          
+          class Model <span class="att">extends</span> Car {
+
+            constructor(brand, mod) {
+              <span class="att">super(brand)</span>;
+
+              this.model = mod;
+            }
+
+            show() {
+              return this.present() + ', it is a ' + this.model;
+            }
+          }
+          
+          let myCar = new Model("Ford", "Mustang");
+        
+          document.getElementById("demo").innerHTML = myCar.show();
+        </pre>
+
+        <!-- DEMO_1 ---------------------------------------------- -->
+        <!-- Class Inheritance -->
+        <div>
+          <p>
+            <mark>demo_1</mark>
+          </p>
+          <p class="description">Class Inheritance</p>
+          <p id="demo_1"></p>
+          <hr />
+        </div>
+
+        <h2>Getters and Setters (Object Accessors)</h2>
+        <p>
+          Getters and setters allow you to define
+          <span class="att"> Object Accessors (Computed Properties) </span>.
+        </p>
+        <p>
+          Use getters and setters for your properties, especially if you want to
+          <span class="att">
+            do something special with the value before returning them, or before
+            you set them </span
+          >.
+        </p>
+        <span class="att">Note</span> : even if the getter is a method, you do
+        not use parentheses when you want to get the property value.
+        <br />
+        <br />
+        <pre>
+            class Car {
+                constructor(brand) {
+                  this.carname = brand;
+                }
+             
+                <span class="att">get cnam()</span> {
+                  return this.carname;
+                }
+             
+                <span class="att">set cnam(x)</span> {
+                  this.carname = x;
+                }
+              }
+              
+              let myCar = new Car("Ford");
+
+              <span class="att">myCar.cnam</span> = 'Fiat'
+              
+              document.getElementById("demo").innerHTML = <span class="att">myCar.cnam</span>;
+        </pre>
+
+        <!-- DEMO_2 ---------------------------------------------- -->
+        <!-- Getters and Setters -->
+        <div>
+          <p>
+            <mark>demo_2</mark>
+          </p>
+          <p class="description">Getters and Setters</p>
+          <p id="demo_2a"></p>
+          <p id="demo_2b"></p>
+        </div>
+        <hr />
+
+        <p>
+          use an underscore character _ before the property name to separate the
+          getter/setter from the actual property:
+        </p>
+        <pre>
+            class Car {
+
+                constructor(brand) {
+                  this._carname = brand;
+                }
+
+                get carname() {
+                  return <span class="att">this._carname</span>;
+                }
+                set carname(x) {
+                  <span class="att">this._carname</span> = x;
+                }
+
+
+                let myCar = new Car("Ford");
+
+                document.getElementById("demo").innerHTML = <span class="att">myCar.carname</span>;
+              }
+        </pre>
+        <hr />
+        <!-- END CONTENT  -->
+      </div>
+    </div>
+    <script src="/chapter_1/04-class-inheritance.js"></script>
+  </body>
+</html>
