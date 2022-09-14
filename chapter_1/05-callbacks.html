@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+    <title>Callbacks</title>
+  </head>
+  <body>
+    <div class="container flexer">
+      <div id="menu"></div>
+      <div id="content">
+        <h2>Callbacks</h2>
+        <p></p>
+        <!-- DEMO_1 ---------------------------------------------- -->
+        <!-- Callbacks -->
+        <div>
+          <p>
+            <mark>demo_1</mark>
+          </p>
+          <p class="description">
+            Functions are executed in the sequence they are called.
+          </p>
+          <p id="demo_1"></p>
+          <hr />
+        </div>
+
+        <!-- DEMO_2 ---------------------------------------------- -->
+        <!-- Do a calculation and then display the result FUNCTION-->
+        <div>
+          <p>
+            <mark>demo_2</mark>
+          </p>
+          <p class="description">
+            Do a calculation and then display the result FUNCTION
+          </p>
+          <p id="demo_2"></p>
+          <hr />
+        </div>
+
+        <!-- DEMO_3 ---------------------------------------------- -->
+        <!-- Do a calculation and then display the result CALLBACK -->
+        <div>
+          <p>
+            <mark>demo_3</mark>
+          </p>
+          <p class="description">
+            Do a calculation and then display the result CALLBACK
+          </p>
+          <p id="demo_3"></p>
+          <hr />
+        </div>
+        <p>
+          The problem with DEMO_2, is that you have to call two functions to
+          display the result.
+        </p>
+
+        <p>
+          The problem with DEMO_3, is that you cannot prevent the calculator
+          function from displaying the result.
+        </p>
+        <p class="att">
+          <span class="att"
+            >A callback is a function passed as an argument to another
+            function.</span
+          >
+        </p>
+        <!-- END CONTENT  -->
+      </div>
+    </div>
+    <script src="/chapter_1/05-callbacks.js"></script>
+  </body>
+</html>
