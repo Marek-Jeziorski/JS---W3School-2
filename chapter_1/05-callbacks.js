@@ -65,3 +65,25 @@
 
   myCalculator(5, 5);
 }
+
+// DEMO_4 ----------------------------------------------
+// Do a calculation and then display the result. - Pass argument with function and then callback
+{
+  console.log();
+  console.log("------------- DEMO_4 -------------");
+  console.log(
+    "Do a calculation and then display the result. - Pass argument with function and then callback"
+  );
+}
+{
+  function myDisplayer(something) {
+    document.getElementById("demo_4").innerHTML = something;
+  }
+
+  function myCalculator(num1, num2, myCallback) {
+    let sum = num1 + num2;
+    myCallback(sum);
+  }
+
+  myCalculator(5, 5, myDisplayer);
+}
