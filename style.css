@@ -47,6 +47,14 @@ span.att {
   border-bottom: 2px solid rgb(140, 156, 247);
 }
 
+span.att.green {
+  border-bottom: 2px solid rgb(122, 245, 159);
+}
+
+span.att.red {
+  border-bottom: 2px solid rgb(245, 130, 122);
+}
+
 p.description {
   color: rgb(52, 228, 52);
 

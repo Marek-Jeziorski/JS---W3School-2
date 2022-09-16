@@ -39,20 +39,30 @@
         <pre>
             let myPromise = new Promise(function(myResolve, myReject) {
         
-              <small>// "Producing Code" (May take some time)</small>
+            <small>"Producing Code" (May take some time)</small>
             
-              myResolve(); <small>// when successful</small>
+            if() {
              
-              myReject();  <small>// when error</small>
-            });
+              myResolve( <small><span class="att green">result value</span></small> ); <small> -->  callback when successful --></small>
             
-            <small>// "Consuming Code" (Must wait for a fulfilled Promise)</small>
+            }
+
+            else {
+
+              myReject( <small><span class="att red">error object</span></small> );  <small> -->  callback when error --> </small>
+            }
+
+            });
+
+            
+            <small>"Consuming Code" (Must wait for a fulfilled Promise)</small>
             
             myPromise.then(
              
-              function(value) { <small>/* code if successful */</small> },
+              function( <small><span class="att green">result value</span></small> ) { <small>/* code if successful */</small> },
               
-              function(error) { <small>/* code if some error */</small> }
+              function( <small><span class="att red">error object</span></small> ) { <small>/* code if some error */</small> }
+           
             );
         </pre>
         <hr />
