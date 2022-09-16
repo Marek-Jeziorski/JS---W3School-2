@@ -17,6 +17,10 @@ mark {
   text-transform: uppercase;
 }
 
+small {
+  color: rgb(140, 156, 247);
+}
+
 .container {
   margin: 0 auto;
   min-height: 95vh;

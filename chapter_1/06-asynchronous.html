@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+    <title>Asynchronous</title>
+  </head>
+  <body>
+    <div class="container flexer">
+      <div id="menu"></div>
+      <div id="content">
+        <h2>Asynchronous</h2>
+        <h3 style="text-align: center">"I will finish later!"</h3>
+        <p style="text-align: center">
+          Functions running in parallel with other functions are called
+          asynchronous
+        </p>
+        <h3>Waiting for a Timeout</h3>
+        <!-- DEMO_1 ---------------------------------------------- -->
+        <!-- Wait 3 seconds (3000 milliseconds) for this page to change. -->
+        <div>
+          <p>
+            <mark>demo_1</mark>
+          </p>
+          <p class="description">
+            Wait 3 seconds (3000 milliseconds) for this page to change.
+          </p>
+          <p id="demo_1"></p>
+          <hr />
+        </div>
+
+        <h3>Waiting for Intervals</h3>
+        <p>
+          <span class="att">setInterval()</span>, you can specify a callback
+          function to be executed for each interval:
+        </p>
+        <!-- DEMO_2 ---------------------------------------------- -->
+        <!-- Using setInterval() to display the time every second (1000 milliseconds) -->
+        <div>
+          <p>
+            <mark>demo_2</mark>
+          </p>
+          <p class="description">
+            Using setInterval() to display the time every second (1000
+            milliseconds)
+          </p>
+          <p id="demo_2"></p>
+          <hr />
+        </div>
+
+        <h3>Waiting for Files</h3>
+        <!-- DEMO_3 ---------------------------------------------- -->
+        <!-- Waiting for Files -->
+        <div>
+          <p>
+            <mark>demo_3</mark>
+          </p>
+          <p class="description">Waiting for Files</p>
+          <p id="demo_3"></p>
+          <hr />
+        </div>
+
+        <!-- END CONTENT  -->
+      </div>
+    </div>
+    <script src="/chapter_1/06-asynchronous.js"></script>
+  </body>
+</html>

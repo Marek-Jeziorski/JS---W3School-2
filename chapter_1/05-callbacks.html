@@ -14,6 +14,16 @@
       <div id="menu"></div>
       <div id="content">
         <h2>Callbacks</h2>
+        <h3 style="text-align: center">"I will call back later!"</h3>
+        <p style="text-align: center">
+          A callback is a function passed as an argument to another function
+        </p>
+        <p style="text-align: center">
+          This technique allows a function to call another function
+        </p>
+        <p style="text-align: center">
+          A callback function can run after another function has finished
+        </p>
         <p></p>
         <!-- DEMO_1 ---------------------------------------------- -->
         <!-- Callbacks -->
@@ -80,8 +90,24 @@
             function and then callback
           </p>
           <p id="demo_4"></p>
-          <hr />
         </div>
+        <pre>
+          {
+            function myDisplayer(something) {
+              document.getElementById("demo_4").innerHTML = something;
+            }
+
+          
+            function myCalculator(num1, num2, <span class="att">myCallback</span>) {
+           
+              let sum = num1 + num2; <small>  --> calculation may take some time</small>
+           
+              <span class="att">myCallback(sum</span>); <small>  --> we need to wait with this function until calculation is done</small>
+            }
+          
+            myCalculator(5, 5, <span class="att">myDisplayer</span>); <small>  --> pass CALLBACK FUNCTION to function as an argument</small>
+          }
+        </pre>
 
         <!-- END CONTENT  -->
       </div>
