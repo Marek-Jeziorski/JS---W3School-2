@@ -14,6 +14,71 @@
       <div id="menu"></div>
       <div id="content">
         <h2>Promises</h2>
+        <div>
+          <h3 style="text-align: center">""I Promise a Result!""</h3>
+          <p style="text-align: center">
+            "Producing code" is code that can take some time
+          </p>
+          <p style="text-align: center">
+            "Consuming code" is code that must wait for the result
+          </p>
+          <p style="text-align: center">
+            A Promise is a JavaScript object that links producing code and
+            consuming code
+          </p>
+          <hr />
+        </div>
+        <h3>Promise Object</h3>
+        <p>
+          Promise object
+          <span class="att">
+            contains both the producing code and calls to the consuming code </span
+          >:
+        </p>
+        <br />
+        <pre>
+            let myPromise = new Promise(function(myResolve, myReject) {
+        
+              <small>// "Producing Code" (May take some time)</small>
+            
+              myResolve(); <small>// when successful</small>
+             
+              myReject();  <small>// when error</small>
+            });
+            
+            <small>// "Consuming Code" (Must wait for a fulfilled Promise)</small>
+            
+            myPromise.then(
+             
+              function(value) { <small>/* code if successful */</small> },
+              
+              function(error) { <small>/* code if some error */</small> }
+            );
+        </pre>
+        <hr />
+        <h3>Here is how to use a Promise</h3>
+        <!-- DEMO_1 ---------------------------------------------- -->
+        <!-- Promise -->
+        <div>
+          <p>
+            <mark>demo_1</mark>
+          </p>
+          <p class="description">Promise</p>
+          <p id="demo_1"></p>
+          <hr />
+        </div>
+        <h3>Promise Examples</h3>
+        <!-- DEMO_2 ---------------------------------------------- -->
+        <!-- Waiting for a Timeout -->
+        <div>
+          <p>
+            <mark>demo_2</mark>
+          </p>
+          <p class="description">Waiting for a Timeout</p>
+          <p id="demo_2"></p>
+          <hr />
+        </div>
+
         <!-- END CONTENT  -->
       </div>
     </div>

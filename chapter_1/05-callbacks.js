@@ -18,7 +18,7 @@
     myDisplayer("Goodbye");
   }
 
-  // CHANGE SEQUENCE OF CALLINGD
+  // CHANGE SEQUENCE OF CALLING
   myFirst();
   mySecond();
 }
