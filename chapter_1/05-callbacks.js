@@ -1,9 +1,9 @@
 // DEMO_1 ----------------------------------------------
-//  Functions are executed in the sequence they are called.
+//Functions are executed in the sequence they are called.
 {
   console.log();
   console.log("------------- DEMO_1 -------------");
-  console.log(" Functions are executed in the sequence they are called.");
+  console.log("Functions are executed in the sequence they are called.");
 }
 {
   function myDisplayer(some) {
@@ -24,12 +24,13 @@
 }
 
 // DEMO_2 ----------------------------------------------
-// Do a calculation and then display the result FUNCTION
-
+//   CALL ONE FUNCTION BY INITIATE VARIABLE --> THEN PASS RETURNED VALUE TO FUNCTION TWO
 {
   console.log();
   console.log("------------- DEMO_2 -------------");
-  console.log("Do a calculation and then display the result FUNCTION");
+  console.log(
+    " CALL ONE FUNCTION BY INITIATE VARIABLE --> THEN PASS RETURNED VALUE TO FUNCTION TWO"
+  );
 }
 {
   function myDisplayer(some) {
@@ -47,11 +48,11 @@
 }
 
 // DEMO_3 ----------------------------------------------
-// Do a calculation and then display the result CALLBACK
+// PUT FUNCTION TWO AT THE END OF CODE FUNCTION ONE
 {
   console.log();
   console.log("------------- DEMO_3 -------------");
-  console.log("Do a calculation and then display the result CALLBACK");
+  console.log("PUT FUNCTION TWO AT THE END OF CODE FUNCTION ONE");
 }
 {
   function myDisplayer(some) {
@@ -67,13 +68,11 @@
 }
 
 // DEMO_4 ----------------------------------------------
-// Do a calculation and then display the result. - Pass argument with function and then callback
+// Pass argument with function and then callback
 {
   console.log();
   console.log("------------- DEMO_4 -------------");
-  console.log(
-    "Do a calculation and then display the result. - Pass argument with function and then callback"
-  );
+  console.log("Pass argument with function and then callback");
 }
 {
   function myDisplayer(something) {

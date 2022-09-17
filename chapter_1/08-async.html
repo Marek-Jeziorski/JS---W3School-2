@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+    <title>Async</title>
+  </head>
+  <body>
+    <div class="container flexer">
+      <div id="menu"></div>
+      <div id="content">
+        <h2>Async</h2>
+        <div>
+          <h3 style="text-align: center">
+            "async and await make promises easier to write"
+          </h3>
+          <p style="text-align: center">
+            async makes a function return a Promise
+          </p>
+          <p style="text-align: center">
+            await makes a function wait for a Promise
+          </p>
+
+          <hr />
+        </div>
+
+        <h3>Async Syntax</h3>
+        <p>
+          The keyword async before a function makes the function return a
+          promise:
+        </p>
+        <pre>
+            async function myFunction() {
+            
+              return "Hello";
+            }
+        </pre>
+        <pre>
+            function myFunction() {
+          
+              return Promise.resolve("Hello");
+            }
+        </pre>
+        <!-- END CONTENT  -->
+      </div>
+    </div>
+    <script src="/chapter_1/08-async.js"></script>
+  </body>
+</html>

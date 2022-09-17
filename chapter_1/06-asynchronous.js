@@ -6,9 +6,11 @@
   console.log("Wait 3 seconds (3000 milliseconds) for this page to change.");
 }
 {
-  setTimeout(myFunction, 3000);
+  setTimeout(myFunction, 2000);
+  console.log("LOG_1a: setTimeout() has just started --> : ");
 
   function myFunction() {
+    console.log("LOG_1b: myFunction from DEMO_1 has just started --> : ");
     document.getElementById("demo_1").innerHTML =
       "It's me Ann <br> I love You !!";
   }
