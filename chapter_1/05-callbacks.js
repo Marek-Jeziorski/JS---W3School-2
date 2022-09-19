@@ -157,3 +157,31 @@
     3000
   );
 }
+
+// DEMO_8 ----------------------------------------------
+// Clean Example of Callback functions with parameters passed as parameters
+{
+  console.log();
+  console.log("------------- DEMO_8 -------------");
+  console.log(
+    "Clean Example of Callback functions with parameters passed as parameters"
+  );
+}
+{
+  function firstAction(message, callback) {
+    document.getElementById("demo_8a").innerHTML = message + " " + x;
+    setTimeout(callback, 2000);
+  }
+
+  function secondAction(message) {
+    document.getElementById("demo_8b").innerHTML = message;
+  }
+
+  setTimeout(
+    () =>
+      firstAction("Im the first action", () =>
+        secondAction("Im the second action")
+      ),
+    3000
+  );
+}

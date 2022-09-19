@@ -57,9 +57,9 @@ span.att.red {
 
 p.description {
   color: rgb(52, 228, 52);
-
-  font-style: italic;
-  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.04rem;
+  word-spacing: 0.05rem;
 }
 
 /* EXERCISES STYLES */
