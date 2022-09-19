@@ -1,5 +1,5 @@
 // DEMO_1 ----------------------------------------------
-//Functions are executed in the sequence they are called.
+// Functions are executed in the sequence they are called.
 {
   console.log();
   console.log("------------- DEMO_1 -------------");
@@ -24,7 +24,7 @@
 }
 
 // DEMO_2 ----------------------------------------------
-//   CALL ONE FUNCTION BY INITIATE VARIABLE --> THEN PASS RETURNED VALUE TO FUNCTION TWO
+// CALL ONE FUNCTION BY INITIATE VARIABLE --> THEN PASS RETURNED VALUE TO FUNCTION TWO
 {
   console.log();
   console.log("------------- DEMO_2 -------------");
@@ -95,24 +95,65 @@
   console.log("Callbacks in JavaScript Explained - Ania Kubów");
 }
 {
-  const button = document.querySelector("button");
+  const button = document.querySelector(".btn");
 
-  function toggle(color) {
-    button.classList.toggle("color");
+  button.addEventListener("click", toggle);
+
+  function toggle() {
+    button.classList.toggle("altColor");
+  }
+}
+
+// DEMO_6 ----------------------------------------------
+// Asynchr code
+{
+  console.log();
+  console.log("------------- DEMO_6 -------------");
+  console.log("Asynchr code");
+}
+{
+  function firstAction() {
+    document.getElementById("demo_6a").innerHTML = "I'm the FIRST action";
+    setTimeout(secondAction, 3000);
   }
 
-  button.addEventListener("click", toggle("altColor"));
+  function secondAction() {
+    document.getElementById("demo_6b").innerHTML = "I'm the SECOND action";
+  }
 
-  // toggle();
+  // Wywołaj funkcję setTimeout (NIECH DZIAŁA), która po 2 sek wywoła funkcję firstAciotn;
+  setTimeout(firstAction, 2000);
+  // TODO:TYMCZASEM PRZEJDŹ DO KOLEJNEJ LINIJKI CODU
+}
+// DEMO_7 ----------------------------------------------
+// Passing callback function with parameter as argument of parent function
+{
+  console.log();
+  console.log("------------- DEMO_7 -------------");
+  console.log(
+    " Passing callback function with parameter as argument of parent function"
+  );
+}
+/* FIXME: uporządkuj / nowy ładny przykład*/
+{
+  function thirdAction(callbackAction) {
+    document.getElementById("demo_7a").innerHTML = "I'm the THIRD action";
+    setTimeout(callbackAction, 1000);
+  }
 
-  /* button.addEventListener("click", function () {
-    button.classList.toggle("altColor");
-  });
- */
+  function messageDisplayer(message) {
+    console.log(message);
+    document.getElementById("demo_7b").innerHTML = message;
+  }
 
-  /* 
-  button.addEventListener("click", () => {
-    button.classList.toggle("altColor");
-  });
-   */
+  //TODO: invoke thirdAction() and pass into it call for messageDisplayer with some message
+  setTimeout(
+    () =>
+      thirdAction(() =>
+        messageDisplayer(
+          "To jest wiadomość od messageDisplayer() wywołana przez thirdAction"
+        )
+      ),
+    3000
+  );
 }

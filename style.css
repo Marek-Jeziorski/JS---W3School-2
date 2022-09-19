@@ -40,6 +40,7 @@ small {
   flex: 12;
   padding: 0 16px;
   border: #999 solid 1px;
+  padding-bottom: 10rem;
 }
 
 span.att {
