@@ -1,3 +1,4 @@
+/* GENERAL STYLES */
 body {
   background-color: #1d2a35;
   color: #ddd;
@@ -58,4 +59,9 @@ p.description {
 
   font-style: italic;
   text-transform: uppercase;
+}
+
+/* EXERCISES STYLES */
+.altColor {
+  background-color: red;
 }

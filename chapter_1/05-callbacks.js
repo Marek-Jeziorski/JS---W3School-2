@@ -86,3 +86,33 @@
 
   myCalculator(5, 5, myDisplayer);
 }
+
+// DEMO_5 ----------------------------------------------
+// Callbacks in JavaScript Explained - Ania Kubów
+{
+  console.log();
+  console.log("------------- DEMO_5 -------------");
+  console.log("Callbacks in JavaScript Explained - Ania Kubów");
+}
+{
+  const button = document.querySelector("button");
+
+  function toggle(color) {
+    button.classList.toggle("color");
+  }
+
+  button.addEventListener("click", toggle("altColor"));
+
+  // toggle();
+
+  /* button.addEventListener("click", function () {
+    button.classList.toggle("altColor");
+  });
+ */
+
+  /* 
+  button.addEventListener("click", () => {
+    button.classList.toggle("altColor");
+  });
+   */
+}
