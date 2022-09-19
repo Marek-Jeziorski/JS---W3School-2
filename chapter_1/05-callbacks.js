@@ -169,7 +169,7 @@
 }
 {
   function firstAction(message, callback) {
-    document.getElementById("demo_8a").innerHTML = message + " " + x;
+    document.getElementById("demo_8a").innerHTML = message;
     setTimeout(callback, 2000);
   }
 
