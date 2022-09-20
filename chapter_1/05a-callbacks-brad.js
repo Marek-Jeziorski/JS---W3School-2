@@ -11,9 +11,20 @@
   3. Log to the console the result that superSecretOrder returns.
 */
   getCats(function (cats) {
-    console.log(cats);
+    // now we have array cats[]
+
+    getDogs(function (dogs) {
+      // now we have cats[] and dogs[]
+
+      getBirds(function (birds) {
+        // no we have cats[] , dogs[], birds[]
+        const allAnimals = cats.concat(dogs, birds);
+        console.log(allAnimals);
+      });
+    });
   });
 
+  // getCats();  TODO: now we invoke function without callback ERROR: cb is not a function
   // ----------------------------------------------------
   // ----------------------------------------------------
   // ----------------------------------------------------
