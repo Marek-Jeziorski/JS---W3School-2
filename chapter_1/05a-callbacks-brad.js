@@ -24,7 +24,8 @@
     });
   });
 
-  // getCats();  TODO: now we invoke function without callback ERROR: cb is not a function
+  getCats();
+  //  TODO: now we invoke function without callback ERROR: cb is not a function
   // ----------------------------------------------------
   // ----------------------------------------------------
   // ----------------------------------------------------
@@ -33,7 +34,9 @@
   function getCats(cb) {
     const random = Math.random() * 1000;
     setTimeout(function () {
-      cb(["Meowsalot", "Purrsloud", "BiscuitMaker"]);
+      if (cb) {
+        cb(["Meowsalot", "Purrsloud", "BiscuitMaker"]);
+      }
     }, random);
   }
 
